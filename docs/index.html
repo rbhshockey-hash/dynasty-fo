@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Dynasty Front Office — data room</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="top">
+    <div class="brand">
+      <span class="mark">DFO</span>
+      <div>
+        <h1>Dynasty Front Office</h1>
+        <p class="sub" id="league-sub"></p>
+      </div>
+    </div>
+    <nav id="nav">
+      <a href="#health">Pipeline health</a>
+      <a href="#rosters">Rosters</a>
+      <a href="#picks">Pick ledger</a>
+      <a href="#contention">Contention record</a>
+      <a href="#roadmap">Roadmap</a>
+    </nav>
+  </header>
+
+  <main id="view" aria-live="polite"><p class="muted">Loading…</p></main>
+
+  <footer>
+    <p>Read-only view of acceptance-tested tables. Source: Sleeper API → Google Apps Script → Google Sheets.
+      The site computes nothing; every number shown is in the sheet.
+      <a href="https://github.com/rbhshockey-hash/dynasty-fo">Code &amp; method on GitHub</a></p>
+    <p class="muted" id="generated"></p>
+  </footer>
+
+  <script src="config.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
